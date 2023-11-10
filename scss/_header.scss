@@ -1,0 +1,37 @@
+.navbar-brand {
+    img {
+        height: 172px;
+        width: 200px;
+        border-radius: 10%;
+        box-shadow: 0px 0px $tamanio-20px 9px rgba(12, 12, 12, 0.57);
+    }
+}
+
+.titulo {
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        color: $color-tituloh1;
+        text-shadow: 1px 1px rgb(251, 152, 54);
+    }
+}
+
+.contenedor {
+    background-image: url(../Assets/Images/index_img/baner4.png);
+    background-size: cover;
+    background-position: top;
+}
+
+.navegador {
+    ul {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        text-shadow: 1px 1px rgb(254, 207, 160);
+    }
+
+    &Nav {
+        padding: 0%;
+    }
+}

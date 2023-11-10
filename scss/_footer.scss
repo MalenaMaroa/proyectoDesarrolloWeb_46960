@@ -1,0 +1,59 @@
+.cardImagen {
+    background-color: $color-secundario-fondo;
+}
+
+.iframeYoutube {
+    border-radius: $tamanio-10px;
+}
+
+.parrafoYoutube,
+.parrafoMaps {
+    font-size: 1.2rem;
+    color: $color-secundario-fondo;
+}
+
+footer {
+    background-color: $color-secundario-fondo;
+}
+
+.redesFooter {
+   
+    @include flexbox(column, center, flex);
+    gap: map-get($tamanios , tamanio-10px);
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    img {
+        margin-right: map-get($tamanios , tamanio-10px);
+    }
+}
+
+@media (max-width: 767px) {
+    .uno,
+    .dos,
+    .tres,
+    .cuatro {
+        flex-direction: column;
+
+        a {
+            margin-bottom: map-get($tamanios , tamanio-10px);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .uno,
+    .dos,
+    .tres,
+    .cuatro {
+        flex-direction: row;
+
+        a {
+            margin-right: map-get($tamanios , tamanio-10px);
+        }
+    }
+}
