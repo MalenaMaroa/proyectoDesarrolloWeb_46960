@@ -1,5 +1,10 @@
+@charset "UTF-8";
 .videoYoutube {
   border-radius: 5%;
+}
+
+span {
+  font-weight: bold;
 }
 
 * {
@@ -72,6 +77,38 @@ body {
     height: auto;
   }
 }
+.titulo-personalizado {
+  color: beige;
+}
+
+.resaltable {
+  transition: transform 0.6s ease;
+  overflow: hidden;
+}
+
+.resaltable:hover {
+  transform: scale(1.059);
+}
+
+/* Estilo inicial del contenedor de texto */
+.titulo {
+  opacity: 0;
+  /* Inicialmente, el texto no es visible */
+  animation: aparecer 0.5s forwards;
+  /* Utiliza la animación llamada "aparecer" */
+}
+
+/* Define la animación llamada "aparecer" */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    /* Opacidad inicial del texto */
+  }
+  to {
+    opacity: 1;
+    /* Opacidad final del texto, 1 para que sea completamente visible */
+  }
+}
 .image-container {
   transition: transform 0.3s;
   overflow: hidden;
@@ -128,18 +165,6 @@ body {
   color: beige;
 }
 
-.contenedorContacto {
-  color: beige;
-}
-
-.textoMainContacto {
-  color: beige;
-}
-
-.mainContacto {
-  background-image: linear-gradient(to bottom, #000000, #240716, #3b032c, #4e004b, #560073, #560073, #560073, #560073, #4e004b, #3b032c, #240716, #000000);
-}
-
 #myCarousel {
   max-width: 1200px;
   margin: 0 auto;
@@ -157,6 +182,30 @@ body {
     max-width: 100%;
   }
 }
+.contenedorContacto {
+  color: beige;
+}
+
+.textoMainContacto {
+  color: beige;
+}
+
+.mainContacto {
+  background-image: linear-gradient(to bottom, #000000, #240716, #3b032c, #4e004b, #560073, #560073, #560073, #560073, #4e004b, #3b032c, #240716, #000000);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imagenDisco {
+  animation: rotate 2s linear infinite;
+}
+
 .cardImagen {
   background-color: beige;
 }

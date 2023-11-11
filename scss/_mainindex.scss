@@ -1,11 +1,48 @@
 body {
-    background-image: linear-gradient(to bottom, #000000, #1e0011, #290024, #2a003e, #070760);
+  background-image: linear-gradient(to bottom, #000000, #1e0011, #290024, #2a003e, #070760);
 }
 
 
 @media (max-width: 768px) {
-    .videoYoutube {
-        width: 100%;
-        height: auto;
-    }
+  .videoYoutube {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.titulo-personalizado {
+  color: beige;
+
+}
+
+.resaltable {
+
+  transition: transform 0.6s ease;
+  overflow: hidden;
+}
+
+
+.resaltable:hover {
+  transform: scale(1.059);
+}
+
+/* Estilo inicial del contenedor de texto */
+.titulo {
+  opacity: 0;
+  /* Inicialmente, el texto no es visible */
+  animation: aparecer 0.5s forwards;
+  /* Utiliza la animación llamada "aparecer" */
+}
+
+/* Define la animación llamada "aparecer" */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    /* Opacidad inicial del texto */
+  }
+
+  to {
+    opacity: 1;
+    /* Opacidad final del texto, 1 para que sea completamente visible */
+  }
 }

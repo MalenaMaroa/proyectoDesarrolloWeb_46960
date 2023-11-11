@@ -1,7 +1,8 @@
-.headerGaleria{
+.headerGaleria {
     padding-bottom: 15px;
     background-color: rgb(14, 13, 13);
 }
+
 .navbar-brand {
     img {
         height: 172px;
@@ -13,10 +14,10 @@
 
 .navLogo img {
     transition: transform 0.5s;
- 
+
 }
 
-.navLogo:hover img{
+.navLogo:hover img {
     transform: scale(0.95);
 
 }
@@ -59,4 +60,3 @@
         padding: 0%;
     }
 }
-

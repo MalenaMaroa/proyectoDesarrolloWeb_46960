@@ -17,7 +17,7 @@ footer {
 }
 
 .redesFooter {
-   
+
     @include flexbox(column, center, flex);
     gap: map-get($tamanios , tamanio-10px);
 
@@ -33,6 +33,7 @@ footer {
 }
 
 @media (max-width: 767px) {
+
     .uno,
     .dos,
     .tres,
@@ -46,6 +47,7 @@ footer {
 }
 
 @media (min-width: 768px) {
+
     .uno,
     .dos,
     .tres,

@@ -1,12 +1,12 @@
 .image-container {
     transition: transform 0.3s;
     overflow: hidden;
-    
+
 }
 
-.image-container:hover{
+.image-container:hover {
     transform: scale(1.05);
-    
+
 
 }
 
@@ -46,7 +46,7 @@
 .image-container img {
     max-width: 100%;
     height: auto;
-    
+
 }
 
 
@@ -57,7 +57,6 @@
 
 }
 
-.contenedorTextogaleria{
+.contenedorTextogaleria {
     background-color: black;
 }
-
