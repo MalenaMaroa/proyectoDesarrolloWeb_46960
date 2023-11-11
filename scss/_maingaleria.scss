@@ -1,21 +1,15 @@
-#myCarousel {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: $tamanio-20px;
-    margin-bottom: $tamanio-20px;
+.image-container {
+    transition: transform 0.3s;
+    overflow: hidden;
+    
+}
+
+.image-container:hover{
+    transform: scale(1.05);
+    
 
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) {
-    #myCarousel {
-        max-width: 100%;
-    }
-}
 
 .image-container {
     margin-top: $tamanio-10px;
@@ -46,14 +40,24 @@
     border: 1px solid #ccc;
     padding: $tamanio-5px;
     border-radius: 5px;
+
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
+    
 }
 
 
 .contenedorGaleria {
     color: $color-secundario-fondo;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #0f0e0e, #0c0b0b, #080707, #040404, #000000);
+
 }
+
+.contenedorTextogaleria{
+    background-color: black;
+}
+

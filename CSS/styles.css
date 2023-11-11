@@ -12,11 +12,24 @@ body {
   background-color: black;
 }
 
+.headerGaleria {
+  padding-bottom: 15px;
+  background-color: rgb(14, 13, 13);
+}
+
 .navbar-brand img {
   height: 172px;
   width: 200px;
   border-radius: 10%;
   box-shadow: 0px 0px 20px 9px rgba(12, 12, 12, 0.57);
+}
+
+.navLogo img {
+  transition: transform 0.5s;
+}
+
+.navLogo:hover img {
+  transform: scale(0.95);
 }
 
 .titulo h1 {
@@ -39,8 +52,18 @@ body {
   color: whitesmoke;
   text-shadow: 1px 1px rgb(254, 207, 160);
 }
+.navegador .nav-item {
+  transition: transform 0.3s;
+}
+.navegador .nav-item:hover {
+  transform: scale(1.2);
+}
 .navegadorNav {
   padding: 0%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #000000, #1e0011, #290024, #2a003e, #070760);
 }
 
 @media (max-width: 768px) {
@@ -49,23 +72,15 @@ body {
     height: auto;
   }
 }
-#myCarousel {
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.image-container {
+  transition: transform 0.3s;
+  overflow: hidden;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: auto;
+.image-container:hover {
+  transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  #myCarousel {
-    max-width: 100%;
-  }
-}
 .image-container {
   margin-top: 10px;
 }
@@ -101,6 +116,12 @@ body {
 
 .contenedorGaleria {
   color: beige;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #0f0e0e, #0c0b0b, #080707, #040404, #000000);
+}
+
+.contenedorTextogaleria {
+  background-color: black;
 }
 
 .contenedorFechas {
@@ -108,13 +129,34 @@ body {
 }
 
 .contenedorContacto {
-  color: rgb(26, 26, 26);
+  color: beige;
+}
+
+.textoMainContacto {
+  color: beige;
 }
 
 .mainContacto {
-  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #000000, #240716, #3b032c, #4e004b, #560073, #560073, #560073, #560073, #4e004b, #3b032c, #240716, #000000);
 }
 
+#myCarousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #myCarousel {
+    max-width: 100%;
+  }
+}
 .cardImagen {
   background-color: beige;
 }
