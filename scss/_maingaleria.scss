@@ -1,3 +1,7 @@
+.titulos{
+    margin-top: 3rem;
+}
+
 .image-container {
     transition: transform 0.3s;
     overflow: hidden;
@@ -53,8 +57,7 @@
 .contenedorGaleria {
     color: $color-secundario-fondo;
     text-align: center;
-    background-image: linear-gradient(to bottom, #0f0e0e, #0c0b0b, #080707, #040404, #000000);
-
+    
 }
 
 .contenedorTextogaleria {

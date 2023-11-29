@@ -18,7 +18,6 @@ body {
 }
 
 .headerGaleria {
-  padding-bottom: 15px;
   background-color: rgb(14, 13, 13);
 }
 
@@ -109,6 +108,10 @@ body {
     /* Opacidad final del texto, 1 para que sea completamente visible */
   }
 }
+.titulos {
+  margin-top: 3rem;
+}
+
 .image-container {
   transition: transform 0.3s;
   overflow: hidden;
@@ -154,7 +157,6 @@ body {
 .contenedorGaleria {
   color: beige;
   text-align: center;
-  background-image: linear-gradient(to bottom, #0f0e0e, #0c0b0b, #080707, #040404, #000000);
 }
 
 .contenedorTextogaleria {
@@ -188,10 +190,6 @@ body {
 
 .textoMainContacto {
   color: beige;
-}
-
-.mainContacto {
-  background-image: linear-gradient(to bottom, #000000, #240716, #3b032c, #4e004b, #560073, #560073, #560073, #560073, #4e004b, #3b032c, #240716, #000000);
 }
 
 @keyframes rotate {
@@ -267,4 +265,7 @@ footer {
   .cuatro a {
     margin-right: 10px;
   }
+}
+.tituloError {
+  font-size: 8rem;
 }/*# sourceMappingURL=styles.css.map */
